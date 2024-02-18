@@ -1,0 +1,148 @@
+div{
+    position: relative;
+}
+.mainlogo{
+    display: flex;
+    height: 40px;
+}
+.logo{
+    display: flex;
+    height: 40px;
+
+}
+.hbsc{
+    display: inline-block;
+    opacity: 1
+}
+.home{
+    display: inline-block;
+    margin:0 20px 20px 20px;
+    
+}
+.blog{
+    display: inline-block;
+    margin:0 20px 20px 20px;
+}
+.shop{
+    display: inline-block;
+    margin: 0px 20px 20px 20px;
+}
+.contact{
+    display: inline-block;
+    margin: 0px 20px 20px 20px;
+}
+.icons{
+    padding: 60px;
+    margin: 60px;
+    display: inline-block;
+}
+.order{
+    
+    color: azure;
+    display: inline-block;
+    border-radius: 90px;
+    text-decoration: none;
+    height: 50px;
+}
+.makeanorder{
+    ;
+    background-color: #5fcac7;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px; 
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.googleplus{
+    display: inline-block;
+    margin:0 20px 20px 20px;
+}
+.twitter{
+    display: inline-block;
+    margin:0 20px 20px 20px;
+}
+.facebook{
+    display: inline-block;
+    margin:0 20px 20px 20px;
+}
+.onesec{
+    display: inline-block;
+    color: black;
+}
+.container{
+    display: inline-block;
+
+}
+li {
+    color: black;
+    max-width: 10px;
+    width: 110px;
+    height: 10px;
+    max-height: 10px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: .3;
+    transition: all .25s ease;
+    box-sizing: border-box;
+}
+ul{
+    color: black;
+}
+.speciality{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    color: #4b4342;
+    font-family: 'DM Sans', sans-serif;
+}
+.top-items{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.bottom-items{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.allitems{
+    align-items: center;
+    justify-content: center;
+}
+.cakeetc{
+    align-items: left;
+    display: inline-block;
+    justify-content: center;
+}
+.macronsetc{
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+}
+.small-cakes{
+    align-items: right;
+    display: inline-block;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;;
+    font-size: 20px;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    margin: 40px 40px 4px 40px;
+    border-radius: 40px;
+    padding: 20px 20px 0px 20px;
+    height: 190px;
+    width: 240px;
+    
+}
