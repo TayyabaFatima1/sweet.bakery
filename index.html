@@ -4,177 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f4cb467015.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="onesec">
-    <nav>
-    <header>
-    <div class="container1">
-        <div class="mainlogo">
-            <img class="mainiamge" height="140px" width="120px" src="main logo.png" alt="image">
+    <nav class="navbar navbar-expand-lg bg-light header-setting">
+        <div class="container logo gap-5">
+          <img src="main logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item  list-item">
+                <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+            <form class=" d-flex gap-3" role="search">
+                <i class="fa-brands fa-google-plus p-3"></i>
+                <i class="fa-brands fa-facebook p-3"></i>
+                <i class="fa-brands fa-twitter p-3"></i>
+              <button class="btn btn-success rounded-pill gap-5" type="submit">Make an order</button>
+            </form>
+          </div>
+        </div> 
+      </nav>
+    <!-- hero started -->
+    <div id="carouselExampleCaptions" class="carousel slide  carousel-height" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="container2">
-        <div class="hbsc">
-             <ul class="home"><li class="hbsc"><a href="Home">Home</a></li></ul>
-             <ul class="blog"></ul> <li class="hbsc"><a href="blog">Blog</li></ul>
-             <ul class="shop"><li class="hbsc"><a href="shop">Shop</li></ul>
-             <ul class="contact"><li class="hbsc"><a href="contact">Contact</li></ul>
-             </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bg image.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="">Welcome to sweet bakery</h1>
+              <p>Opening Hours
+                Mondey-Friday: 07:30 AM - 23:00 PM
+                Weekends: 07:30 AM - 03:00 PM</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="360_F_563620783_9icanRCanLxCe2h7SzwhSQvoEqS9RWSG.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="641cdcbdd67fe70018a3827b.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
         </div>
-        <div class="icons">
-            <span class="googleplus"><i class="fa-brands fa-google-plus"></i></span>
-            <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
-            <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
-        </div>
-        <div class="order">
-            <a class="makeanorder" href="Make an order">Make an order</a>
-        </div>
-    </div>
-    </div>
-    </header>
-    </section>
-</nav>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  
+<!-- section started  -->
+<div class="container-fluid">
+  
+  <div class="img-section"> 
+    <h1 class="row justify-content-center container-heading">Our Specialties</h1>
+  <div class="container">
+    <div class="container-images">
+    <div class="bakery-item"><img class="bakery-item-images" src="cake1.jpg" alt=""><span>cupcake</span></div>
+    <div class="bakery-item"><img class="bakery-item-images"  src="macrons.jpg" alt=""><span>macaroon</span></div>
+   <div class="bakery-item"><img class="bakery-item-images"  src="small cakes.jpg" alt=""><span>small cakes</span></div>
+  </div>
+  <div class="container-images">
+    <div class="bakery-item"><img class="bakery-item-images"  src="croissant.jpg" alt=""><span>Croissants
+</span></div>
+   <div class="bakery-item"><img  class="bakery-item-images" src="applepie.jpg" alt=""><span>Apple Pie</span></div>
+    <div class="bakery-item"><img class="bakery-item-images"  src="cheese cake.jpg" alt=""><span>Cheesecake</span></div>
+  </div>
+  </div>
+</div>
+ 
+</div>
+
+<div class="container-fluid ">
+  <div class="color-bg-img">
+  <div class="overlay-image">
+    <div class="mid-section">
+      <div class="inner-section">
+        <i class="fa-solid fa-cake-candles fa-2xl cake1"></i>
+        <h3>magic processing</h3>
+        <p class="inner-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Vitae voluptatum consectetur doloribus quos natus eos, ipsa rerum ratione dolorem repellat.</p>
+        <button class="but">discover more</button>
+      </div>
         
 
-<div class="container3">
-    <div>
-    <img class="bgimage" height="100px" width="100px" src="bg image.jpg" alt="">
-    </div>
-    <div class="textonimage">
-    <h2>Welcome</h2>
-    <h2>To Sweet Bakery</h2>
-    <p>Opening Hours</p>
-    <p>Mondey-Friday: 07:30 AM - 23:00 PM</p>
-    <p>Weekends: 07:30 AM - 03:00 PM</p>
-    <div class="button">
-        <a class="ordersweet" href="button">Order sweets</a>
-    </div>
-</div>
-    <div>
-        <div class="speciality">
-            <h1>Our Specialities</h1>
-        </div>
-    </div>
-</section>
-<section class="allitems">
-<div class="top-items">
-    <div class="cakeetc" >
-        <div class="cakeetc">
-            <img src="cake1.jpg" alt="">
-        </div>
-        <p class="text">Cupcakes</p>
-    </div>
-        <div class="macronsetc" >
-            <div class="macronsetc">
-                <img src="macrons.jpg" alt="">
-            </div>
-            <p class="text">Macarons</p>
-        </div>
-            <div class="small-cakes" >
-                <div class="small-cakes">
-                    <img src="small cakes.jpg" alt="">
-                </div>
-                <p class="text">Small cakes</p>
-            </div>
-</div>
-            
-<div class="bottom-items">
-    <div class="cakeetc" >
-        <div class="cakeetc">
-            <img src="croissant.jpg" alt="">
-        </div>
-        <p class="text">Croissant</p>
-    </div>
-        <div class="macronsetc" >
-            <div class="macronsetc">
-                <img src="applepie.jpg" alt="">
-            </div>
-            <p class="text">Apple pie</p>
-        </div>
-            <div class="small-cakes" >
-                <div class="small-cakes">
-                    <img src="cheese cake.jpg" alt="">
-                </div>
-                <p class="text">Cheese cake</p>
-            </div>
-</div>
-</section>
-<section class="table">
-    <div class="overlay" style="opacity: 0.8; background-color: rgb(95, 202, 199);">
-    </div>
-    <div class="container4">
-        <div class="overlay" style="opacity: 0.8;background-color: rgb(95, 202, 199);">
-        </div>
-       <div class="inner">
-        <i class="fa-solid fa-cake-candles" style="color: #f7f7f7;"></i>
-         <h2 class="magic">Magic Processing
-            <p class="magic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus nisi,  nostrum commodi dignissimos officiis et quaerat corrupti facilis quasi.</p>
-            
-            </h2>
-       </div>
-    </div>
-</div>
-<div>
+      </div>
+      
 
-    <div class="Creations">
-        <div><i class="fa-solid fa-cake-candles" style="color: #f184ed;"></i></div>
-        <h1 class="creation">Our Creations</h1>
     </div>
-                           
-</section>
-</section>
-<section class="allitems2">
-<div class="top-items2">
-    <div class="cakeetc" >
-        <div class="frozencake">
-            <img src="1image.jpg" alt="">
-        </div>
     </div>
-        <div class="cupcake2" >
-            <div class="cupcake2">
-                <img src="2image.jpg" alt="">
-            </div>
-        </div>
-            <div class="cakebuffet" >
-                <div class="cakebuffet">
-                    <img src="3image.jpg" alt="">
-                </div>
-               
-            </div>
-         <div class="rainbowcupcake" >
-                <div class="rainbowcupcake">
-                    <img src="4image.jpg" alt="">
-                </div>
-                
-            </div>
-</div>
+  </div>
 
-<div class="bottom-items2">
-    <div class="cakeetc" >
-        <div class="frozencake">
-            <img src="5image.jpg" alt="">
-        </div>
-    </div>
-        <div class="cupcake2" >
-            <div class="cupcake2">
-                <img src="6image.jpg" alt="">
-            </div>
-        </div>
-            <div class="cakebuffet" >
-                <div class="cakebuffet">
-                    <img src="7image.jpg" alt="">
-                </div>
-               
-            </div>
-         <div class="rainbowcupcake" >
-                <div class="rainbowcupcake">
-                    <img src="8image.jpg" alt="">
-                </div>
-                
-            </div>
-</div>
 
+
+
+  <div class="container-fluid">
+    <section>
+     <div class="cake2"><i class="fa-solid fa-cake-candles fa-xs color-cake"></i></div>
+    <h1 class="creation-heading row justify-content-center ">our creation</h1>
+    </section>
+    
+ 
+    <div class="container center-images">
+      <div class="creation-images">
+        <img src="1image.jpg" alt="" class="creation-pics">
+        <img src="2image.jpg" alt="" class="creation-pics">
+        <img src="3image.jpg" alt="" class="creation-pics">
+        <img src="4image.jpg" alt="" class="creation-pics">
+        </div>
+        <div class="creation-images">
+        <img src="5image.jpg" alt="" class="creation-pics">
+        <img src="6image.jpg" alt="" class="creation-pics">
+        <img src="7image.jpg" alt="" class="creation-pics">
+        <img src="8image.jpg" alt="" class="creation-pics">
+        </div>
+        
+      
+    </div>
+  </div>
+
+  <div class="container-fluid ">
+  <div class="recipes-section">
+    <div class="recipe">
+       <div class="cake2"><i class="fa-solid fa-cake-candles fa-xs color-cake"></i></div>
+       <h1 class="recipe-heading row justify-content-center">recipes for you</h1>
+
+    </div>
+
+    <div class="container">
+      <div class="eves-pudding-recipie">
+        <p>
+          <strong>Ingredients:</strong>
+          <br>
+        6 large Bramley apples, finely sliced
+        <br>
+        200g unsalted butter
+        <br>
+        140g raisins
+        <br>
+        100g soft brown sugar
+        <br>
+        4 eggs
+        <br>
+        200g self-raising flour
+        </p>
+
+        <div class="eves-pudding">
+          <img src="bakery22-1-240x240.jpg" alt="" class="pudding">
+          <span class="eves">Eve's Pudding</span>
+        </div>
+
+      </div>
+    </div>
+  
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 </html>

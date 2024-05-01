@@ -1,302 +1,394 @@
 
-div{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-setting{
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.list-item{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: -3; 
+}
+
+.menu{
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 500;
+    padding: 0 20px;
+    color:#4b4342;
+    cursor: pointer;
     position: relative;
 }
 
-.mainlogo{
-    display: inline-block;
-    
-}
-header{
-    align-items: center;
-}
-.container1{
-    display: inline-block;
-    height: 40px;
-    margin-right: 0px;
-}
-.container2{
-    display: inline-block;
-    padding: auto;
-    
-}
-.hbsc{
-    display: inline-block;
-    opacity: 1
-}
-.home{
-    display: inline-block;
-    margin:0 20px 20px 20px;
-    
-}
-.blog{
-    display: inline-block;
-    margin:0 20px 20px 20px;
-}
-.shop{
-    display: inline-block;
-    margin: 0px 20px 20px 20px;
-}
-.contact{
-    display: inline-block;
-    margin: 0px 20px 20px 20px;
-}
-.icons{
-    padding: 60px;
-    margin: 40pxpx;
-    display: inline-block;
-}
-.order{
-    
-    color: azure;
-    display: inline-block;
-    border-radius: 90px;
-    text-decoration: none;
-    height: 50px;
-}
-.makeanorder{
-    ;
-    background-color: #5fcac7;
-    color: white;
-    text-decoration: none;
-    border-radius: 100px; 
-    height: 50px;
-}
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.googleplus{
-    display: inline-block;
-    margin:0 20px 20px 20px;
-}
-.twitter{
-    display: inline-block;
-    margin:0 20px 20px 20px;
-}
-.facebook{
-    display: inline-block;
-    margin:0 20px 20px 20px;
-}
-.onesec{
-    display: inline-block;
-    color: black;
-}
-li {
-    color: black;
-    max-width: 10px;
-    width: 110px;
-    height: 10px;
-    max-height: 10px;
-    margin: 0 5px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    opacity: .3;
-    transition: all .25s ease;
-    box-sizing: border-box;
-}
-ul{
-    color: black;
-}
-.container3{
-position: relative;
-}
-.textonimage{
-    text-align: left;
-    left: 60px;
-    font-weight: 700;
-    top: 0%;
-    line-height: 86px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+.menu::after{
+    content: "";
     position: absolute;
-    font-size: 4.5rem;
-    padding right: 20px; 
-    margin: 96px ;
-    transform: translate(-50%,);
-}
-.bgimage{
-    z-index: index 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0.9;
-    border-radius: 0%;
-    align-items: center;
-    height: 840px;
-    width: 90%;
-    object-fit: cover;
-    
-}
-p{
-    margin-top: 30px;
-    font-size: 1.375rem;
-    font-weight: 500;
-    line-height: 0px;
-    word-spacing: normal;
-}
-.button{
-margin-top: 30px;
-box-sizing: border-box;
-border-radius: 60px;
-size: 60px;
-}
-.ordersweet{
-    size: 60px;
-    color: white;
-    box-sizing: border-box;
-    border-radius: 60px;
-    font-weight: 500;
-    font-size: large;
-    background-color: #5fcac7 !important;
-    border-color: #5fcac7 !important;
-}
-.speciality{
-    padding: 20px;
-    font-weight: bolder;
-    font-size: 30px;
-    text-align: center;
-    color: #4b4342;
-    font-family: 'DM Sans', sans-serif;
-}
-.top-items{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.bottom-items{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.allitems{
-    align-items: center;
-    background-image: url(bg image.jpg);
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #5fcac7 ;
+    transform: scaleX(0);
+    transition: 1s;
 
 }
-section{
-    background-position: 50% 50%;
+
+.menu:hover::after{
+    transform: scaleX(1);
+}
+
+.logo_img{
+    height: 120px;
+}
+
+.fa-brands{
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+.fa-brands::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #5fcac7 ;
+    transform: scaleX(0);
+    transition: 1s;
+
+}
+
+.fa-brands:hover::after{
+     transform: scaleX(1);
+
+}
+
+
+.round{
+    border-radius: 27px;
+    text-transform: capitalize;
+}
+
+.text-setting{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: left;
+    font-size: 40px;
+    /* margin-right: 313px; */
+    margin-bottom: 230px;
+}
+
+
+
+.text-setting h2 {
+    font-size: 80px;
+    position: relative;
+    z-index: 2;
+    /* text-align: justify; */
+}
+
+.text-setting .para {
+    z-index: 2;
+    position: relative;
+}
+
+.text-setting .round {
+    z-index: 2;
+    position: relative;
+}
+
+
+.opt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; 
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    z-index: 1;
+}
+
+.img-section{
+    /* background: url('images/cake-sweet-food-tasty.jpg') no-repeat center center/cover;
+    content: ""; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* opacity: 0.6; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    
+}
+
+.img-section::before {
+     content: "";
+    background: url('images/bakery4-5-1200x800.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    position: relative;
-}
-.cakeetc{
-    align-items: left;
-    display: inline-block;
-    justify-content: center;
-}
-.macronsetc{
-    align-items: center;
-    display: inline-block;
-    justify-content: center;
-}
-.small-cakes{
-    align-items: right;
-    display: inline-block;
-    justify-content: center;
-}
-.text{
-    text-align: center;
-    font-family: 'DM Sans', sans-serif;;
-    font-size: 20px;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: .2; */
+    
+
 }
 
-img{
+.container-fluid{
+    padding: 0;
+}
+
+.container-images{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 40px 40px 4px 40px;
-    border-radius: 40px;
-    padding: 20px 20px 0px 20px;
-    height: 190px;
-    width: 240px;
-    
+    flex-flow: row wrap;
+
 }
-.mainimage{
-    margin: 200px;
-    padding: 20px;
-}
-.table{
-    padding: 6rem;
-    background-image: url(../../../assets/images/bakery12-3-1200x800.jpg);
-}
-.overlay{
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-}
-.container4{
-    position: relative;
-    max-width: 1140px;
-    opacity: 0.8;
-    background-color: rgb(95, 202, 199);
-}
-.overlay {
-    background-color: rgb(95, 202, 199);
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    /* pointer-events: none; */
-}
-.inner{ 
-    box-sizing: border-box;
-    border-radius: 60px;
-    border-color: white;
-    height: 400px;
-    position: relative;
-    max-width: 1140px;
-}
-.magic{
-    text-align: center;
-    color: white;
-}
-.fa-solid {
-    display: flex;
-    font-size: 62px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.creations{
-    justify-content: center;
-    align-items: center;
-    
-}
-.creation{
-    padding: 20px;
-    font-weight: bolder;
-    font-size: 40px;
-    text-align: center;
+
+.container-heading{
+    font-size: 3.625rem;
     color: #4b4342;
-    font-family: 'DM Sans', sans-serif;
+    padding: 80px;
 }
-.allitems2{
-    align-items: center;
+.bakery-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+span{
+    font-weight: 400;
+    color: #4b4342;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 30px 0;
+}
+
+.bakery-item-images{
+    width:200px;
+    height: 160px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+
+
+.color-bg-img{
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/pngtree-soft-pastel-strawberries-on-cream-a-3d-rendered-treat-picture-image_3710477.jpg');
+}
+
+.overlay-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:800px ;
+    background-color: rgba(95, 202, 199,0.8);
+    display: flex;
     justify-content: center;
-    background-image: url(bg image.jpg);
+    align-items: center;
+} 
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 500px;
+    width: 900px;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+h3{
+   font-size: 40px;
+    text-transform: capitalize;
+     margin-top: 25px;
+     color: #ffffff;;
+     font-weight: 700;
     
 }
-.top-items2{
-    align-items: center;
-    display: flex;
-    justify-content: center
+
+.inner-para{
+    margin-top: 25px;
+    color: #ffffff;;
     
 }
-.bottom-items2{
-    align-items: center;
+.cake1{
+    font-size: 62px;
+    margin-bottom: 25px;
+    color: #ffffff;;
+}
+
+
+
+
+.but{
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    height: 50px;
+    width: 167px;
+    margin-top: 25px;
+    border: 1px solid white;
+    background: transparent;
+
+}
+
+.but:hover{
+    background-color: white;
+}
+
+
+section{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.cake{
+    /* padding: 40px; */
+    margin-top: 25px;
+    /* margin-left: 590px;  */
+    color: #ff91a4;
+    font-size: 60px;
+    text-align: center;
+}
+
+.creation-heading{
+    font-size: 2.625rem;
+    color: #4b4342;
+    margin: 25px 0 0 ;
+
+    text-transform: capitalize;
+
+}
+
+.center-images{
+    padding-bottom: 75px;
+}
+
+.creation-images{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.creation-pics{
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.recipes-section{
+    position: relative;
+     width: 100%;
+    height: 100%;
+}
+
+.recipes-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('BGIMAGE3.jpg'); /* Replace 'background.jpg' with your image */
+  background-size: cover;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-shrink: initial
-}  
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    z-index: 1;
+}
+
+.cake2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.color-cake{
+    color: #ff91a4;
+    font-size: 60px;
+}
+
+.recipe-heading{
+    font-size: 2.625rem;
+    color: #4b4342;
+    margin-top: 64px;
+    text-transform: capitalize;
+}
+
+
+.eves-pudding-recipie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+
+}
+
+.eves-pudding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pudding{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
